@@ -8,12 +8,12 @@
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 41px;
   padding-right: 39px;
-  min-height: 581px;
+  min-height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,6 +24,10 @@
   transform: rotate(0);
   transform: translate(-50%, -50%);
   transition: transform 1000ms;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -87,10 +91,11 @@
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
-  border-color: var(--accent-color);}
+    border-color: var(--accent-color);
+  }
   .input-modal:focus + .input-icon {
-  fill: var(--accent-color);
-}
+    fill: var(--accent-color);
+  }
 }
 
 .input-wrap {
@@ -106,7 +111,6 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .online-comments {
   display: block;
   padding: 12px 16px;
@@ -118,39 +122,47 @@
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
-  border-color: var(--accent-color);}
+    border-color: var(--accent-color);
+  }
   &::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .comments-wrap {
   margin-bottom: 20px;
 }
 
-
 .policy-text {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .policy-link {
   margin-left: 5px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-item {
@@ -164,10 +176,10 @@
 }
 
 .input-checkbox:checked + .policy-text {
-.check-item {
-  background-color: var(--accent-color);
-  border: none;
-}
+  .check-item {
+    background-color: var(--accent-color);
+    border: none;
+  }
 }
 
 .policy-icon {

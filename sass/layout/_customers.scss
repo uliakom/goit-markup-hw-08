@@ -35,8 +35,11 @@
 }
 
 .clients__item {
-  width: 210px;
+  width: calc((100% - 1 * 30px) / 2);
   height: 92px;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
   @media screen and (max-width: 767px) {
     &:nth-child(-n + 4) {
       margin-bottom: 30px;

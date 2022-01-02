@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/17-mob-1x.jpg);
+    url("../../images/17-mob-1x.jpg");
   border-color: var(--third-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -17,24 +17,24 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(./images/17-mob-2x.jpg);
+    background-image: url("../../images/17-mob-2x.jpg");
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../../images/17-tab-1x.jpg);
+    background-image: url("../../images/17-tab-1x.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/17-tab-2x.jpg);
+      background-image: url("../../images/17-tab-2x.jpg");
       max-width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-      background-image: url(../../images/17.jpg);
+      background-image: url("../../images/17.jpg");
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../../images/17-2x.jpg);
+        background-image: url("../../images/17-2x.jpg");
         max-width: 1600px;
         height: 600px;
         padding-top: 200px;
